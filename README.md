@@ -12,7 +12,7 @@ Needs python, pyephem and imagemagick (composite)
 
 Displays ISS, Tiangong 1 and Hubble Space Telescope positions on an equirectangular world map. You can add more satellites ([you need the TLE orbital data](http://en.wikipedia.org/wiki/Two-line_element_set)), you also can change the images (you may change some variables in the script though)
 
-Run the script using 'python [path]/xfce-sat-wallpaper.py'
+Run the script using `python [path]/xfce-sat-wallpaper.py`
 
 Sorry for my bad english
 
