@@ -4,13 +4,16 @@ xfce-sat-wallpaper
 Wallpaper showing current satellite locations for xfce
 ------------------------------------------------------
 
+![Screenshot](https://dl.dropboxusercontent.com/u/22248029/Imagenes/Screenshot%20-%20061214%20-%2020%3A51%3A31.png)
+
 Script that creates a world image showing current satellite positions each 30 seconds  
 It's a little CPU heavy because of imagemagick's composite command
 
 It's easily adaptable for other desktop environment, you only need to change the set wallpaper command. 
 Needs python, pyephem and imagemagick (composite)
 
-Displays ISS, Tiangong 1 and Hubble Space Telescope positions on an equirectangular world map. You can add more satellites ([you need the TLE orbital data](http://en.wikipedia.org/wiki/Two-line_element_set)), you also can change the images (you may change some variables in the script though)
+Displays ISS, Tiangong 1 and Hubble Space Telescope positions on an equirectangular world map. You can add more satellites ([you need the TLE orbital data](http://en.wikipedia.org/wiki/Two-line_element_set)), you also can change the images (you may change some variables in the script though).
+TLE orbital data can change sometimes, you should update it yearly
 
 Run the script using `python [path]/xfce-sat-wallpaper.py`
 
@@ -31,7 +34,7 @@ sudo pip install pyephem
 
 ### Commands for wallpaper changing
 
-This script needs to execute a command to change wallpaper, this command varies between distros or between hardware. for example my notebook uses XFCE and the right command is:
+This script needs to execute a command to change wallpaper, this command varies between distros or between hardware. For example my notebook uses XFCE and the right command is:
 ```
 xfconf-query --channel xfce4-desktop --property /backdrop/screen0/monitoreDP1/workspace0/last-image --set [image location]
 ```
